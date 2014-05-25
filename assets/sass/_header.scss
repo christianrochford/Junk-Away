@@ -1,0 +1,278 @@
+header {
+    width: 100%;
+    height: 130px;
+    float: left;
+    background-color: #b8000f;
+    position: fixed;
+    z-index: 999;
+    -webkit-box-shadow: 0px 1px 3px #000;
+    box-shadow: 0px 1px 3px #000;
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+
+@media (max-width: 656px) {
+    header {
+        height: 70px;
+    }
+}
+
+header #logo {
+    display: block;
+    width: 111px;
+    height: 108px;
+    float: left;
+    margin: 10px 0 0 20px;
+    background-image: url("../img/logo-white.png");
+    background-repeat: no-repeat;
+    -webkit-background-size: contain;
+    background-size: contain;
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+
+@media (max-width: 656px) {
+    header #logo {
+        display: none;
+    }
+}
+
+header h1,header h2 {
+    text-indent: -9999px;
+}
+
+header #brand {
+    display: block;
+    background-image: url("../img/logo-header.png");
+    background-repeat: no-repeat;
+    -webkit-background-size: contain;
+    background-size: contain;
+    width: 260px;
+    height: 52px;
+    position: absolute;
+    left: 50%;
+    margin-left: -130px;
+    margin-top: 20px;
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+
+@media (max-width: 656px) {
+    header #brand {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 320px) {
+    header #brand {
+        width: 190px;
+        margin-left: -92px;
+        margin-top: 16px;
+    }
+}
+
+header #cta {
+    position: absolute;
+    right: 20%;
+    top: -10px;
+    padding: 30px 10px 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 2px 2px;
+    box-shadow: 0px 2px 2px;
+    background-color: #003152;
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+
+@media (max-width: 960px) {
+    header #cta {
+        right: 15%;
+    }
+}
+
+@media (max-width: 768px) {
+    header #cta {
+        right: 5%;
+    }
+}
+
+header #cta a {
+    color: #fff;
+}
+
+header #cta a:hover,header #cta a:focus,header #cta a:active {
+    color: #b8000f;
+}
+
+@media (max-width: 656px) {
+    header #cta {
+        background-color: #b8000f;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        top: -8px;
+        right: 10px;
+        font-size: 2em;
+    }
+
+    header #cta a:hover,header #cta a:focus,header #cta a:active {
+        color: #003152;
+    }
+}
+
+@media (max-width: 656px) {
+    header #cta #phone {
+        display: none;
+    }
+}
+
+header #social-links {
+    width: 100px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+
+@media (max-width: 768px) {
+    header #social-links {
+        top: 60px;
+        right: 6%;
+    }
+}
+
+@media (max-width: 656px) {
+    header #social-links {
+        display: none;
+    }
+}
+
+header #social-links ul {
+    width: 100px;
+}
+
+header #social-links ul li {
+    width: 33.333%;
+    float: left;
+}
+
+header #social-links ul li a {
+    display: block;
+    width: 100%;
+    font-size: 1em;
+    color: #fff;
+    text-align: center;
+}
+
+header #social-links ul li a:hover,header #social-links ul li a:focus,header #social-links ul li a:active {
+    color: #003152;
+}
+
+header #social-links ul li .icon-mail {
+    margin-top: 2px;
+}
+
+header #social-links ul li .icon-facebook,header #social-links ul li .icon-twitter {
+    font-size: 1.2em;
+}
+
+header .icon-menu {
+    display: none;
+}
+
+@media (max-width: 656px) {
+    header .icon-menu {
+        display: block;
+        position: absolute;
+        top: 24px;
+        left: 24px;
+        color: #fff;
+        font-size: 1.5em;
+    }
+}
+
+header .icon-menu.open {
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
+header nav {
+    width: 80%;
+    float: left;
+    margin: 96px 0 0 0;
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+
+@media (max-width: 656px) {
+    header nav {
+        display: none;
+    }
+}
+
+header nav ul {
+    width: 100%;
+}
+
+header nav ul li {
+    width: 16.6666%;
+    float: left;
+    position: relative;
+}
+
+header nav ul li a {
+    display: block;
+    width: 100%;
+    height: 20px;
+    font-family: "museo_sans_500regular";
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 0.8em;
+    letter-spacing: 2px;
+    font-weight: 300;
+}
+
+header nav ul li a:hover,header nav ul li a:focus,header nav ul li a:active {
+    color: #003152;
+}
+
+@media (min-width: 656px) {
+    header.shrink {
+        height: 70px;
+    }
+
+    header.shrink #logo {
+        width: 0;
+        height: 0;
+        margin: 0;
+    }
+
+    header.shrink #brand {
+        width: 150px;
+        height: 30px;
+        margin: 10px 0 0 -75px;
+    }
+
+    header.shrink #cta {
+        top: -20px;
+    }
+
+    header.shrink #social-links {
+        top: 10px;
+    }
+
+    header.shrink nav {
+        width: 100%;
+        margin-top: 46px;
+    }
+}
+
+@media (min-width: 656px) and (max-width: 768px) {
+    header.shrink #social-links {
+        display: none;
+    }
+}

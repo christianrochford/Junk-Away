@@ -1,0 +1,48 @@
+.modal {
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 998;
+}
+
+.modal .modal-bg {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255,255,255,0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.modal .icon-close-modal {
+    color: #b8000f;
+    font-size: 1.5em;
+    position: absolute;
+    top: 150px;
+    right: 20px;
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+
+@media (max-width: 656px) {
+    .modal .icon-close-modal {
+        top: 90px;
+    }
+}
+
+.modal .icon-close-modal:hover,.modal .icon-close-modal:focus,.modal .icon-close-modal:active {
+    font-size: 1.6em;
+}
+
+.modal h3 {
+    text-align: center;
+    margin-top: 150px;
+}
+
+@media (max-width: 656px) {
+    .modal h3 {
+        margin-top: 90px;
+    }
+}

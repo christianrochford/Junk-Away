@@ -1,0 +1,66 @@
+.cookie-message {
+    width: 100%;
+    height: 40px;
+    background-color: #003152;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+@media (max-width: 767px) {
+    .cookie-message {
+        height: 56px;
+    }
+}
+
+@media (max-width: 409px) {
+    .cookie-message {
+        height: 76px;
+    }
+}
+
+.cookie-message p {
+    color: #fff;
+    font-size: 0.8em;
+    width: 85%;
+    float: left;
+    padding: 10px 20px;
+}
+
+.cookie-message p a {
+    color: #fff;
+}
+
+.cookie-message p a:hover,.cookie-message p a:focus,.cookie-message p a:active {
+    color: #b8000f;
+}
+
+.cookie-message .icon-close-modal {
+    color: #fff;
+    font-size: 0.8em;
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    border-radius: 30px;
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    padding: 8px;
+}
+
+.cookie-message .icon-close-modal:hover,.cookie-message .icon-close-modal:focus,.cookie-message .icon-close-modal:active {
+    color: #003152;
+}
+
+@media (max-width: 767px) {
+    .cookie-message .icon-close-modal {
+        top: 14px;
+    }
+}
+
+@media (max-width: 409px) {
+    .cookie-message .icon-close-modal {
+        top: 25px;
+    }
+}

@@ -1,0 +1,67 @@
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background: #fff;
+}
+
+h1,h2,h3,h4,h5 {
+    font-family: "museo_sans_700regular";
+    text-transform: uppercase;
+    color: #003152;
+    margin-top: 1.2em;
+}
+
+h3+p.bar {
+    display: block;
+    width: 50px;
+    height: 5px;
+    background-color: #b8000f;
+    margin: -10px auto 10px;
+}
+
+p {
+    font-family: "droid_serifregular";
+    color: #6f6f6f;
+}
+
+a {
+    color: #003152;
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+
+a:hover,a:focus,a:active {
+    color: #b8000f;
+}
+
+ol li,ul li {
+    color: #6f6f6f;
+    font-family: "droid_serifregular";
+}
+
+blockquote {
+    border: none;
+    margin-bottom: 5px;
+}
+
+blockquote:before {
+    color: rgba(0,49,82,0.7);
+    content: "\201C";
+    font-size: 3em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+}
+
+blockquote:after {
+    color: rgba(0,49,82,0.7);
+    content: "\201D";
+    font-size: 3em;
+    line-height: 0.1em;
+    margin-left: 0.25em;
+    vertical-align: -0.4em;
+}

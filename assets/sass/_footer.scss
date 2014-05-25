@@ -1,0 +1,73 @@
+footer {
+    width: 100%;
+    float: left;
+    background: #b8000f;
+    padding: 20px 0 0;
+    position: relative;
+    border-top: 2px solid #003152;
+}
+
+@media (max-width: 480px) {
+    footer {
+        padding: 20px 0;
+    }
+}
+
+footer .twelve.columns .row {
+    width: 25%;
+    float: left;
+}
+
+@media (max-width: 480px) {
+    footer .twelve.columns .row {
+        width: 33.333%;
+    }
+}
+
+@media (max-width: 480px) {
+    footer .footer-menu,footer #social-menu,footer #legal-menu,footer #hours-menu {
+        margin-bottom: 0;
+    }
+}
+
+footer .footer-menu li,footer #social-menu li,footer #legal-menu li,footer #hours-menu li {
+    color: #fff;
+    font-family: "museo_sans_500regular";
+    font-size: 0.8em;
+}
+
+footer .footer-menu li a,footer #social-menu li a,footer #legal-menu li a,footer #hours-menu li a {
+    color: #fff;
+    font-family: "museo_sans_500regular";
+}
+
+footer .footer-menu li a:hover,footer .footer-menu li a:focus,footer .footer-menu li a:active,footer #social-menu li a:hover,footer #social-menu li a:focus,footer #social-menu li a:active,footer #legal-menu li a:hover,footer #legal-menu li a:focus,footer #legal-menu li a:active,footer #hours-menu li a:hover,footer #hours-menu li a:focus,footer #hours-menu li a:active {
+    color: #003152;
+}
+
+footer .footer-menu li .icon-mail,footer .footer-menu li .icon-facebook,footer .footer-menu li .icon-twitter,footer #social-menu li .icon-mail,footer #social-menu li .icon-facebook,footer #social-menu li .icon-twitter,footer #legal-menu li .icon-mail,footer #legal-menu li .icon-facebook,footer #legal-menu li .icon-twitter,footer #hours-menu li .icon-mail,footer #hours-menu li .icon-facebook,footer #hours-menu li .icon-twitter {
+    font-family: 'junkaway';
+}
+
+footer #social-menu {
+    margin: 0;
+}
+
+footer #social-menu li {
+    display: inline;
+    margin-right: 10px;
+}
+
+@media (max-width: 480px) {
+    footer #social-menu {
+        width: 100%;
+        float: left;
+    }
+}
+
+@media (max-width: 760px) {
+    footer .twelve.columns .row.hours {
+        width: 100%;
+        float: left;
+    }
+}

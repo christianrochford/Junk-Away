@@ -4,7 +4,7 @@ footer {
     background: #b8000f;
     padding: 20px 0 0;
     position: relative;
-    border-top: 2px solid #003152;
+    border-top: 2px solid $green;
 }
 
 @media (max-width: 480px) {
@@ -18,15 +18,15 @@ footer .twelve.columns .row {
     float: left;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 767px) {
     footer .twelve.columns .row {
         width: 33.333%;
     }
 }
 
 @media (max-width: 480px) {
-    footer .footer-menu,footer #social-menu,footer #legal-menu,footer #hours-menu {
-        margin-bottom: 0;
+    footer .footer-menu,footer #social-menu,footer #legal-menu {
+        margin-bottom: 10px;
     }
 }
 

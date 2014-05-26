@@ -23,7 +23,7 @@ header #logo {
     height: 108px;
     float: left;
     margin: 10px 0 0 20px;
-    background-image: url("../img/logo-white.png");
+    background-image: url("../img/logo.png");
     background-repeat: no-repeat;
     -webkit-background-size: contain;
     background-size: contain;
@@ -33,7 +33,15 @@ header #logo {
 
 @media (max-width: 656px) {
     header #logo {
-        display: none;
+        height: 56px;
+        margin: 6px 0 0 15%;
+    }
+}
+
+@media (max-width: 656px) {
+    header #logo {
+        height: 40px;
+        margin: 15px 0 0 16%;
     }
 }
 
@@ -63,11 +71,18 @@ header #brand {
     }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 480px) {
     header #brand {
         width: 190px;
-        margin-left: -92px;
+        margin-left: -60px;
         margin-top: 16px;
+    }
+}
+
+@media (max-width: 400px) {
+    header #brand {
+        width: 153px;
+        margin-top: 20px;
     }
 }
 
@@ -79,9 +94,12 @@ header #cta {
     border-radius: 10px;
     -webkit-box-shadow: 0px 2px 2px;
     box-shadow: 0px 2px 2px;
-    background-color: #003152;
+    background-color: $green;
     -webkit-transition: all 300ms ease-in-out;
     transition: all 300ms ease-in-out;
+    .mobile-phone{
+        display: none;
+    }
 }
 
 @media (max-width: 960px) {
@@ -93,6 +111,22 @@ header #cta {
 @media (max-width: 768px) {
     header #cta {
         right: 5%;
+    }
+}
+
+@media (max-width: 400px) {
+    header #cta {
+        right: 0;
+    }
+}
+
+@media (max-width: 480px) {
+
+    header #cta .desktop-phone{
+        display: none;
+    }
+    header #cta .mobile-phone{
+        display: block;
     }
 }
 
@@ -165,7 +199,7 @@ header #social-links ul li a {
 }
 
 header #social-links ul li a:hover,header #social-links ul li a:focus,header #social-links ul li a:active {
-    color: #003152;
+    color: $green;
 }
 
 header #social-links ul li .icon-mail {
@@ -188,6 +222,12 @@ header .icon-menu {
         left: 24px;
         color: #fff;
         font-size: 1.5em;
+    }
+}
+
+@media (max-width: 400px) {
+    header .icon-menu {
+        left: 14px;
     }
 }
 
@@ -237,7 +277,7 @@ header nav ul li a {
 }
 
 header nav ul li a:hover,header nav ul li a:focus,header nav ul li a:active {
-    color: #003152;
+    color: $blue;
 }
 
 @media (min-width: 656px) {

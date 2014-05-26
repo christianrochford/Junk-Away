@@ -13,7 +13,7 @@
 <link rel="stylesheet" href="icons/ie7/ie7.css">
 <script src="icons/ie7/ie7.js"></script>
 <![endif]-->
-<script src="js/modernizr/modernizr.min.js"></script>
+<script src="js/modernizr.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 </head>
 <body>
@@ -24,8 +24,10 @@
 		</a>
 		<a href="index.html" id="brand"><h1>Junkaway</h1></a>
 		<div id="cta">
-			<a href="tel:01-5357614"><span class="icon-phone" aria-hidden="true"></span></a>
-			<a href="tel:01-5357614" id="phone">01-5357614</a>
+			<a href="tel:01-5357614" class="desktop-phone"><span class="icon-phone" aria-hidden="true"></span></a>
+			<a href="tel:01-5357614" id="phone" class="desktop-phone">01-5357614</a>
+			<a href="tel:01-5357614" class="mobile-phone"><span class="icon-phone" aria-hidden="true"></span></a>
+			<a href="tel:01-5357614" id="phone"  class="mobile-phone">01-5357614</a>
 		</div>
 		<div id="social-links">
 			<ul>
@@ -66,19 +68,19 @@
 					<div class="flex-caption"><p>We take all your JunkAway!</p></div>
 				</li>
 				<li>
-					<img src="img/slider1.jpg" alt="junkaway">
-					<img src="img/slider1-tablet.jpg" alt="junkaway" class="small">
+					<img src="img/slider2.png" alt="junkaway">
+					<img src="img/slider2-tablet.jpg" alt="junkaway" class="small">
 					<div class="flex-caption"><p>Free visit & No obligation quote!</p></div>
 				</li>
 				<li>
-					<img src="img/slider1.jpg" alt="junkaway">
-					<img src="img/slider1-tablet.jpg" alt="junkaway" class="small">
-					<div class="flex-caption"><p><a href="#">Commercial & Domestic Services</a></p><p class="caption-link"><a href="#">Read More...</a></p></div>
+					<img src="img/slider3.png" alt="junkaway">
+					<img src="img/slider3-tablet.jpg" alt="junkaway" class="small">
+					<div class="flex-caption"><p><a href="rates.html">Commercial & Domestic Services</a> - <a href="rates.html">Read More...</a></p></div>
 				</li>
 				<li>
-					<img src="img/slider1.jpg" alt="junkaway">
-					<img src="img/slider1-tablet.jpg" alt="junkaway" class="small">
-					<div class="flex-caption"><p><a href="#">Single items collected from EUR20!</a></p><p class="caption-link"><a href="#">Read More...</a></p></div>
+					<img src="img/slider4.png" alt="junkaway">
+					<img src="img/slider4-tablet.jpg" alt="junkaway" class="small">
+					<div class="flex-caption"><p><a href="rates.html">Single items collected from EUR20!</a> - <a href="rates.html">Read More...</a></p></div>
 				</li>
 			</ul>
 		</div>
@@ -93,6 +95,7 @@
 				</ol>
 			</div>
 		</div>
+		<div class="borderline"></div>
 		<div class="row">
 			<div class="twelve columns" id="quotes">
 				<h3>Testimonials</h3><p class="bar"></p>
@@ -102,6 +105,7 @@
 				<p class="author">Jane Doe, Bray, Co. Wicklow.</p>
 			</div>
 		</div>
+		<div class="borderline"></div>
 		<div class="row">
 			<div class="twelve columns" id="clients">
 				<h3>Clients</h3><p class="bar"></p>
@@ -112,24 +116,16 @@
 				</ul>
 			</div>
 		</div>
+		<div class="borderline"></div>
 		<div class="row">
 			<section class="twelve columns" id="news">
 				<h3>News</h3><p class="bar"></p>
 				<article>
 					<h5>Article Title Goes Here</h5>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, fugiat, veritatis repellat ex iusto ipsum. Ut, consequuntur magni culpa reprehenderit ad error earum placeat sunt nesciunt tempora ipsam obcaecati! Fuga...</p>
-					<a href="#">Read More</a>
+					<!-- <a href="#">Read More</a> -->
 				</article>
-				<article>
-					<h5>Article Title Goes Here</h5>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, fugiat, veritatis repellat ex iusto ipsum. Ut, consequuntur magni culpa reprehenderit ad error earum placeat sunt nesciunt tempora ipsam obcaecati! Fuga...</p>
-					<a href="#">Read More</a>
-				</article>
-				<article>
-					<h5>Article Title Goes Here</h5>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, fugiat, veritatis repellat ex iusto ipsum. Ut, consequuntur magni culpa reprehenderit ad error earum placeat sunt nesciunt tempora ipsam obcaecati! Fuga...</p>
-					<a href="#">Read More</a>
-				</article>
+				<div class="button"><a href="news.html">More News</a></div>
 			</div>
 		</section>
 	</div>

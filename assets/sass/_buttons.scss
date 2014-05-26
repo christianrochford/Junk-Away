@@ -1,0 +1,17 @@
+.button{
+    background-color: $red;
+    border: none;
+    padding: 10px 27px;
+    position: absolute;
+    left: 50%;
+    bottom: -20px;
+    margin-left: -65px;
+    &:hover, &:focus, &:active{
+        background-color: $green;
+    }
+    a{
+        color: $white;
+        font-family: "museo_sans_500regular";
+    	font-size: 0.8em;
+    }
+}

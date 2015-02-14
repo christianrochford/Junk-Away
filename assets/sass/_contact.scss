@@ -1,0 +1,198 @@
+.contact form{
+	position: relative;
+	#errors{
+		text-align: left;
+		font-family: "museo_sans_500regular";
+		color: $red;
+		text-transform: uppercase;
+		font-size: 0.8em;
+		font-weight: 300;
+	}
+	label{
+		width: 30%;
+		float: left;
+		text-align: left;
+		font-family: "museo_sans_500regular";
+		color: $blue;
+		text-transform: uppercase;
+		font-size: 0.8em;
+		font-weight: 300;
+		cursor: default;
+		span{
+			color: $red;
+		}
+		@include breakpoint(tablet){
+			width: 100%;
+		}
+	}
+	select, input, #uploads, textarea{
+		width: 70%;
+		float: left;
+		@include breakpoint(tablet){
+			width: 100%;
+		}
+	}
+	select{
+		-webkit-appearance: none;
+		border-radius: 0;
+		background-color: #fff;
+		font-family: inherit;
+		border: 1px solid #ccc;
+		-webkit-box-shadow: none;
+		box-shadow: none;
+		color: rgba(0,0,0,0.75);
+		display: block;
+		font-size: 0.875em;
+		margin: 0 0 1em 0;
+		padding: 0.5em;
+		height: 2.3125em;
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+		@include breakpoint(tablet){
+			width: 100%;
+		}
+		&:focus{
+			outline: none;
+			outline-offset: 0;
+		}
+
+	}
+	.upload{
+		width: 200px;
+	}
+	#calendar{
+		display: none;
+		width: 300px;
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 1;
+		background: $white-opaque;
+		width: 100%;
+		height: 100%;
+		.pika-single{
+			position: absolute;
+			top: 158px;
+			left: 50%;
+			margin-left: -150px;
+			@include breakpoint(mobile-landscape){
+				top: 100px;
+			}
+			.pika-title{
+				width: 310px;
+				height: 110px;
+				button{
+					float: left;
+				}
+			}
+		}
+		.pika-label{
+			font-family: "museo_sans_500regular";
+			color: #fff;
+			width: 154px;
+			float: left;
+		}
+		.pika-select{
+			width: auto;
+			float: none;
+			margin-left: 10px;
+		}
+		button{
+			width: 130px;
+			margin: 10px 10px;
+			font-size: 0.5em;
+			background: $blue;
+			transition: all 300ms ease-in-out;
+			border: none;
+			box-shadow: none;
+			-webkit-appearance: none;
+			&:hover, &:focus, &:active{
+				background-color: $green;
+			}
+		}
+		table{
+			border: solid 1px $blue;
+			width: 214px;
+			tr{
+				th{
+					font-family: "museo_sans_500regular";
+					color: $blue;
+					abbr{
+						color: #fff;
+					}
+				}
+				td {
+					padding: 0.65em;
+					font-size: 0.5em;
+					height: 30px;
+				}
+			} 
+		}
+		.pika-day{
+			width: 30px;
+			height: 30px;
+			margin: 0;
+			border: none;
+			background-color: $blue;
+			font-size: 2em;
+			padding: 0;
+			transition: all 300ms ease-in-out;
+			&:hover, &:focus, &:active{
+				background-color: $green;
+			}
+		}
+	}
+	#submit{
+		width: 100px;
+		height: 32px;
+		float: right;
+		margin-top: 20px;
+		color: $white;
+		background-color: $green;
+		text-transform: uppercase;
+		text-align: center;
+		border: none;
+		-webkit-appearance: none;
+		border-radius: 0;
+		transition: all 300ms ease-in-out;
+		&:hover, &:focus, &:active{
+			cursor: pointer;
+			background-color: $blue;
+		}
+		@include breakpoint(tablet){
+			width: 100%;
+		}
+	}
+	#captcha-text{
+		font-family: "museo_sans_500regular";
+		color: $blue;
+		text-transform: uppercase;
+		font-size: 0.8em;
+		font-weight: 300;
+		float: left;
+		width: 70%;
+		margin-left: 30%;
+		text-align: left;
+		span{
+			color: $red;
+		}
+		@include breakpoint(tablet){
+			width: 100%;
+			margin-left: 0;
+		}
+	}
+	img{
+		@include breakpoint(tablet){
+			float: left;
+		}
+	}
+	#captcha{
+		width: 140px;
+		margin: 0 20px 0 30%;
+		@include breakpoint(tablet){
+			float: left;
+			margin: 0 0 0 8px;
+		}
+	}
+}

@@ -22,6 +22,9 @@
     #mobile-nav ul li {
         width: 100%;
         position: relative;
+        .dd-nav{
+            display: none;
+        }
     }
 
     #mobile-nav ul li:first-child a {
@@ -38,7 +41,7 @@
         font-family: "museo_sans_700regular";
         color: #fff;
         text-align: left;
-        height: 40px;
+        height: 41px;
         padding: 8px 10px;
     }
 

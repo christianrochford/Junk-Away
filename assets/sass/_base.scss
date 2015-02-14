@@ -8,6 +8,19 @@ body {
     background: #fff;
 }
 
+.nine {
+    width: 66.666%;
+    @include breakpoint(tablet){
+        width: 100%;
+    }
+}
+.three {
+    width: 33.333%;
+    @include breakpoint(tablet){
+        width: 100%;
+    }
+}
+
 h1,h2,h3,h4,h5 {
     font-family: "museo_sans_700regular";
     text-transform: uppercase;
@@ -15,12 +28,24 @@ h1,h2,h3,h4,h5 {
     margin-top: 1.2em;
 }
 
+h2{
+    text-align: center;
+}
+
+h2+p.bar {
+    display: block;
+    width: 50px;
+    height: 5px;
+    background-color: #b8000f;
+    margin: -15px auto 10px;
+}
+
 h3+p.bar {
     display: block;
     width: 50px;
     height: 5px;
     background-color: #b8000f;
-    margin: -10px auto 10px;
+    margin: -11px auto 10px;
 }
 
 p {
@@ -64,4 +89,7 @@ blockquote:after {
     line-height: 0.1em;
     margin-left: 0.25em;
     vertical-align: -0.4em;
+}
+.center{
+    text-align: center;
 }

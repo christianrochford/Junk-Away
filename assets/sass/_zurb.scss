@@ -4834,13 +4834,9 @@ form.custom .custom.dropdown {
     margin-bottom: 1.25em;
     margin-top: 0;
     padding: 0;
-    width: 100%;
+    width: 70%;
+    float: left;
     background: #fff;
-    background: -webkit-linear-gradient(top, #fff 0%, #f3f3f3 100%);
-    -webkit-box-shadow: none;
-    background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#f3f3f3));
-    background: -webkit-linear-gradient(top, #ffffff 0%, #f3f3f3 100%);
-    background: linear-gradient(to bottom, #ffffff 0%,#f3f3f3 100%);
     -webkit-box-shadow: none;
     box-shadow: none;
     font-size: 0.875em;
@@ -4882,7 +4878,7 @@ form.custom .custom.dropdown .selector:after {
     width: 0;
     height: 0;
     border: inset 5px;
-    border-color: #aaa transparent transparent transparent;
+    border-color: $red transparent transparent transparent;
     border-top-style: solid;
     position: absolute;
     left: 0.9375em;
@@ -4896,7 +4892,7 @@ form.custom .custom.dropdown:hover a.selector:after,form.custom .custom.dropdown
     width: 0;
     height: 0;
     border: inset 5px;
-    border-color: #222 transparent transparent transparent;
+    border-color: $green transparent transparent transparent;
     border-top-style: solid;
 }
 
@@ -5004,6 +5000,10 @@ form.custom .custom.dropdown ul li {
     margin: 0;
     white-space: nowrap;
     list-style: none;
+    text-indent: 0;
+    &:before{
+        content: " ";
+    }
 }
 
 form.custom .custom.dropdown ul li.selected {
